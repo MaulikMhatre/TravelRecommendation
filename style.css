@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    
+    padding-top: 80px; 
+    background-image: url("images/image 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+     min-height: 100vh; 
+     width: 100%;
+}
+
+/* Navigation bar container */
+.nav-bar {
+    width: 100%;
+ 
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#menu-logo img {
+    height: 7rem;    
+    width: auto;     
+    display: block;  
+    border-radius: 50%;
+}
+
+#menu-logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Heading text */
+#heading-text {
+    font-size: 1.75rem;
+    font-family: "El Messiri", sans-serif;
+    color:black;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-bar-components a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar-components a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Search bar layout */
+.search-bar {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input field styling */
+.search-bar input[type="text"] {
+    width: 250px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+#search-button button,
+#clear-button button {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color:#FFFFFA ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button button:hover,
+#clear-button button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Container to align logos and text side-by-side */
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 50px;
+  padding-top: 200px;
+  margin-right: 680px;
+}
+
+/* Logos stacked vertically */
+.social-media-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* Small circular icons */
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+#quote_1,#quote_2,#quote_3{
+    padding-top: 10px;
+    color: #FFFFFA;
+    font-size: 3rem;
+}
+
+#para{
+    font-size: 1.2rem;
+    color: #FFFFFA;
+    padding-top: 30px;
+    margin-right: 300px;
+}

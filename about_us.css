@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    
+    padding-top: 80px; 
+    background-image: url("images/landscape.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+     min-height: 100vh; 
+     width: 100%;
+}
+
+/* Navigation bar container */
+.nav-bar {
+    width: 100%;
+ 
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#menu-logo img {
+    height: 7rem;    
+    width: auto;     
+    display: block;  
+    border-radius: 50%;
+}
+
+#menu-logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Heading text */
+#heading-text {
+    font-size: 1.5rem;
+    font-family: "El Messiri", sans-serif;
+    color:black;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-bar-components a {
+    margin-left: 120px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar-components a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+}
+
+h1{
+    font-size: 4.5rem;
+    padding: 70px 0 0 175px;
+    color: aliceblue;
+}
+
+.normal-text{
+    font-size: 1rem;
+    color: white;
+    font-family: "El Messiri", sans-serif;
+}
+
+#about-us{
+    padding: 20px 100px 0 175px ;
+    text-align: left;
+}
+
+
+.our-team {
+    padding: 40px 50px 40px 175px;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+/* Titles */
+.title {
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.title:first-child {
+    margin-bottom: 20px;
+}
+
+/* Shared logo */
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/*CEO, HOD, and Creative Director */
+
+.our-team #ceo,
+.our-team #hod,
+.our-team #Creative-Director {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+    text-align: center;
+    margin: 0 20px; 
+}
+
+
+.our-team .team-members {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 40px;
+} 
+
+/* Name styling */
+#ceo-name, #hod-name, #Creative-Director-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+} 
+
+
+#ceo-info, #hod-info, #Creative-Director-info {
+    font-size: 1rem;
+    max-width: 300px;
+    color: white;
+    margin: 0 auto 10px auto;
+} 
+
+#ceo-tag, #hod-tag, #Creative-Director-tag {
+    height: 25px;
+    width: 100px;
+    font-size: 0.9rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 5px;
+} 
+ 
+
+#ceo, #hod, #Creative-Director {
+    background-color: rgba(39, 31, 31, 0.662); 
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 20px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.94); 
+}
+

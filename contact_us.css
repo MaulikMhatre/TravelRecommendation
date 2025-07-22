@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    
+    padding-top: 80px; 
+    background-image: url("images/lake.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+     min-height: 100vh; 
+     width: 100%;
+}
+
+/* Navigation bar container */
+.nav-bar {
+    width: 100%;
+ 
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#menu-logo img {
+    height: 7rem;    
+    width: auto;     
+    display: block;  
+    border-radius: 50%;
+}
+
+#menu-logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Heading text */
+#heading-text {
+    font-size: 1.75rem;
+    font-family: "El Messiri", sans-serif;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-bar-components a {
+    margin-left: 175px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar-components a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+}
+
+#heading{
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px; 
+  padding: 40px 10%;
+    font-size: 4rem;
+}
+
+
+.heading-section {
+  display: flex;
+  flex-wrap: nowrap;        
+  align-items: center;       
+  justify-content: center;   
+  gap: 100px;                 
+  margin-top: 100px;  
+  margin-right: 300px;       
+}
+
+/* Vertical column for icons */
+.social-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* Style each icon image */
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Heading styles */
+.contact-heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: whitesmoke;    
+}
+
+.form {
+  margin: 75px 40px 40px 20px;
+  width: 500px;  
+  padding: 20px;    
+  box-sizing: border-box;  
+  background-color:rgba(0, 0, 0, 0.281); 
+  border-radius: 8px;         
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+}
+
+textarea {
+  width: 400px;
+  height: 150px;
+  background-color:rgba(0, 0, 0, 0.281);
+}
+#submit{
+  width: 400px;
+  border-radius: 1rem;
+    background-color:rgba(0, 0, 0, 0.281);
+   color: aliceblue;
+}
+
+#name,#email{
+   background-color:rgba(0, 0, 0, 0.281);
+   
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+ 
+
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 18px;
+  color: #fffefe;
+  border: none;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  color: #fff; 
+  font-weight: bold;
+  margin-top: 15px;
+}
