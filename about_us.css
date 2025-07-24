@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+
+.our-team {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+
 body {
     
     padding-top: 80px; 
@@ -16,6 +27,7 @@ body {
      min-height: 100vh; 
      width: 100%;
 }
+
 
 /* Navigation bar container */
 .nav-bar {
@@ -55,7 +67,7 @@ body {
 
 /* Navigation links */
 .nav-bar-components a {
-    margin-left: 120px;
+    margin-left: 150px;
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -71,7 +83,7 @@ body {
 }
 
 h1{
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     padding: 70px 0 0 175px;
     color: aliceblue;
 }
@@ -89,7 +101,7 @@ h1{
 
 
 .our-team {
-    padding: 40px 50px 40px 175px;
+    padding: 30px 50px 40px 175px;
     background-color: transparent;
     font-family: Arial, sans-serif;
 }
@@ -133,7 +145,7 @@ h1{
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 10px;
 } 
 
 /* Name styling */
@@ -174,3 +186,99 @@ h1{
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.94); 
 }
 
+@media (max-width: 600px) {
+  /* Nav bar adjustments */
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  #menu-logo {
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  #menu-logo img {
+    height: 5rem; /* smaller logo for mobile */
+  }
+
+  .nav-bar-components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .nav-bar-components a {
+    margin-left: 0;
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+
+  /* About Us header and text */
+  h1 {
+    font-size: 2.5rem;
+    padding: 20px 10px 10px;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  #about-us {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+  }
+
+  /* Team section */
+  .our-team {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .team-members {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .our-team #ceo,
+  .our-team #hod,
+  .our-team #Creative-Director {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 320px;
+    background-color: rgba(39, 31, 31, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
+  }
+
+  /* Smaller logos */
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* Text inside team cards */
+  #ceo-name, #hod-name, #Creative-Director-name {
+    font-size: 1.2rem;
+  }
+
+  #ceo-info, #hod-info, #Creative-Director-info {
+    font-size: 1rem;
+    color: #eee;
+    margin: 0 auto 10px;
+  }
+
+  #ceo-tag, #hod-tag, #Creative-Director-tag {
+    width: auto;
+    font-size: 0.85rem;
+    padding: 5px 15px;
+  }
+}
